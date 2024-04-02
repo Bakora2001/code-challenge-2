@@ -1,8 +1,8 @@
 function primeNumbers(arr) {
-    return arr.filter(num => isPrime(num));
+    return arr.filter(num => hasPrime(num));
   }
   
-  function isPrime(num) {
+  function hasPrime(num) {
     if (num < 2) return false;
     for (let i = 2; i <= Math.sqrt(num); i++) {
       if (num % i === 0) return false;
